@@ -1,0 +1,59 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEFEFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*--------------------------------------*/
+
+div:first-child {
+    background-color: #303F9F;
+    transform: skew(-15deg);
+}
+
+div:nth-child(2) {
+    background-color: #1976D2;
+    transform: rotate(-15deg);
+}
+
+div:nth-child(3) {
+    background-color: #0288D1;
+    transform: rotate(15deg) scale(0.8) skew(-15deg);
+}
+
+div:nth-child(4) {
+    background-color: #303F9F;
+    transform: translate(0, 50%);
+}
+
+div:last-child {
+    background-color: #00796B;
+    transform: scale(1.3);
+}
+
+
+
